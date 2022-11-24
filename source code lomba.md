@@ -3,6 +3,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+
 using namespace std;
 
 /*
@@ -239,15 +240,14 @@ void rera(double y) {
     cout<<hasil;
     }
 }
-//referensi --> stackoverflow
-VOID WINAPI SetConsoleColors(WORD attribs);
+
 
 int main(){
-       SetConsoleColors(BACKGROUND_BLUE | FOREGROUND_RED | FOREGROUND_INTENSITY);
+    system("COLOR 3A");
     double x;
     string in,out;
 
-    cout<<"TEMPERATURE CONVERTER\n\n\n";
+    cout<<"\tTEMPERATURE CONVERTER\n\n\n";
     cout<<"Petunjuk Input\n\nInput dimasukan sesuai dengan format yang diminta, misal (suhu (spasi) satuan)\n\nSatuan yang digunakan antara lain : \nCelcius : C\nFahrenheit : F\nReamur : Re\nRankine : R\nKelvin : K\n\nContoh Input : 273 K\n";
     cout<<"\n(Tekan Enter Untuk Lanjut)";
 cin.get();
@@ -483,17 +483,6 @@ while (lanjut) {
 
     cout<<"Disclaimer!!!\n\nProgram ini ditulis secara manual(dari nol) dengan berbagai referensi tanpa niat menjiplak,meniru, maupun memanfaatkan program orang lain\n\nTerimakasih:)";
 
-}
-
-
-VOID WINAPI SetConsoleColors(WORD attribs) {
-    HANDLE hOutput = GetStdHandle(STD_OUTPUT_HANDLE);
-
-    CONSOLE_SCREEN_BUFFER_INFOEX cbi;
-    cbi.cbSize = sizeof(CONSOLE_SCREEN_BUFFER_INFOEX);
-    GetConsoleScreenBufferInfoEx(hOutput, &cbi);
-    cbi.wAttributes = attribs;
-    SetConsoleScreenBufferInfoEx(hOutput, &cbi);
 }
 
 
