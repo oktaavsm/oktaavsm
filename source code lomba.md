@@ -243,7 +243,7 @@ void rera(double y) {
 
 
 int main(){
-    system("COLOR 3A");
+    system("COLOR 3F    ");
     double x;
     string in,out;
 
@@ -301,7 +301,7 @@ cin.get();
             kf(x);
         } else if (in=="K" && out=="Re") {
             kre(x);
-        } else if (in=="K" && out=="Ra") {
+        } else if (in=="K" && out=="R") {
             kra(x);
         }else if (in=="R" && out=="C") {
             rac(x);
@@ -484,7 +484,6 @@ while (lanjut) {
     cout<<"Disclaimer!!!\n\nProgram ini ditulis secara manual(dari nol) dengan berbagai referensi tanpa niat menjiplak,meniru, maupun memanfaatkan program orang lain\n\nTerimakasih:)";
 
 }
-
 
 
 
